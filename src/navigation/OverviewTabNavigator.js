@@ -20,27 +20,27 @@ const OverviewTabNavigator = () => {
         name="Home"
         component={HomeScreen}
         options={{
-          tabBarLabel: 'Trang chủ',
+          tabBarLabel: 'Home',
           tabBarIcon: ({color}) => (
             <MaterialIcons name="home" size={26} color={color} />
           ),
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name="Notification"
         component={ProfileScreen}
         options={{
-          tabBarLabel: 'Thông báo',
+          tabBarLabel: 'Notificaton',
           tabBarIcon: ({color}) => (
             <MaterialIcons name="notifications" size={26} color={color} />
           ),
         }}
       />
       <Tab.Screen
-        name="Notification"
+        name="Profile"
         component={NotificationScreen}
         options={{
-          tabBarLabel: 'Cá nhân',
+          tabBarLabel: 'Profile',
           tabBarIcon: ({color}) => (
             <MaterialIcons name="person" size={26} color={color} />
           ),

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import {
   StyleSheet,
@@ -10,11 +11,11 @@ import {
 
 const {width} = Dimensions.get('window');
 
-const section_banner = require('../../../assets/Hand_Made_Shosp.png');
-const item_image_1 = require('../../../assets/item_image_1.png');
-const item_image_2 = require('../../../assets/item_image_2.png');
-const item_image_3 = require('../../../assets/item_image_3.png');
-const item_image_4 = require('../../../assets/item_image_4.png');
+const section_banner = require('../../../assets/log1.png');
+const item_image_1 = require('../../../assets/an-hamberger-co-beo-khong-7-1-300x187.jpeg');
+const item_image_2 = require('../../../assets/4973.jpeg');
+const item_image_3 = require('../../../assets/424351.jpeg');
+const item_image_4 = require('../../../assets/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpeg');
 
 const ProductItem = ({image, name, price}) => (
   <View style={styles.itemContainer}>
@@ -30,35 +31,32 @@ const HomeSectionComponent = () => {
   return (
     <View style={styles.sectionContainer}>
       {/*  */}
-      <Text style={styles.sectionTitle}>Đồ Lưu Niệm Các Loại</Text>
+      <Text style={styles.sectionTitle}>MENU FAST FOOD </Text>
       {/*  */}
       <Image source={section_banner} style={styles.sectionImage} />
       {/*  */}
       <ScrollView horizontal={true}>
         <View style={styles.filterContainer}>
-          {[
-            'Tất cả',
-            'Đồ lưu niệm Việt Nam',
-            'Đồ lưu niệm Nga',
-            'Đồ lưu niệm Quốc tế',
-          ].map((e, index) => (
-            <View
-              key={index.toString(2)}
-              style={
-                index === 0
-                  ? styles.filterActiveButtonContainer
-                  : styles.filterInactiveButtonContainer
-              }>
-              <Text
+          {['Pick-up', 'Soft Drinks', 'Bakery Items', 'Fast Food','Deals','Coffee & Tea','Desserts'].map(
+            (e, index) => (
+              <View
+                key={index.toString(2)}
                 style={
                   index === 0
-                    ? styles.filterActiveText
-                    : styles.filterInactiveText
+                    ? styles.filterActiveButtonContainer
+                    : styles.filterInactiveButtonContainer
                 }>
-                {e}
-              </Text>
-            </View>
-          ))}
+                <Text
+                  style={
+                    index === 0
+                      ? styles.filterActiveText
+                      : styles.filterInactiveText
+                  }>
+                  {e}
+                </Text>
+              </View>
+            ),
+          )}
         </View>
       </ScrollView>
       {/*  */}
@@ -71,16 +69,12 @@ const HomeSectionComponent = () => {
             {image1: item_image_1, image2: item_image_2},
           ].map((e, index) => (
             <View key={index.toString()}>
-              <ProductItem
-                name="Đồ tự tay làm"
-                image={e.image1}
-                price="99.000đ"
-              />
-              <ProductItem
-                name="Đồ nhập quốc tế"
-                image={e.image2}
-                price="99.000đ"
-              />
+              <ProductItem name="Fast Food" image={e.image1} price="29.000đ" />
+              <ProductItem name="Soft Drink" image={e.image2} price="49.000đ" />
+              <ProductItem name="Bakery Items" image={e.image2} price="99.000đ" />
+              <ProductItem name="Deals" image={e.image2} price="19.000đ" />
+              <ProductItem name="Coffee & Tea" image={e.image2} price="79.000đ" />
+              <ProductItem name="Desserts" image={e.image2} price="69.000đ" />
             </View>
           ))}
         </View>
@@ -119,7 +113,7 @@ const styles = StyleSheet.create({
   filterActiveButtonContainer: {
     backgroundColor: '#242424',
     paddingHorizontal: 12,
-    paddingVertical: 6,
+    paddingVertical: 4,
     borderRadius: 4,
     marginRight: 10,
   },

@@ -8,14 +8,14 @@ import {
   useWindowDimensions,
   ScrollView,
 } from 'react-native';
-import Logo from '../../../assets/Hand_Made_Shosp.png';
+import Logo from '../../../assets/FastFood.png';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import SocialSignInButtons from '../../components/SocialSignInButtons';
 import {useNavigation} from '@react-navigation/native';
 
 const SignInScreen = () => {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const {height} = useWindowDimensions();
@@ -45,8 +45,8 @@ const SignInScreen = () => {
 
         <CustomInput
           placeholder="Username"
-          value={username}
-          setValue={setUsername}
+          value={email}
+          setValue={setEmail}
         />
         <CustomInput
           placeholder="Password"
@@ -78,12 +78,11 @@ const SignInScreen = () => {
 const styles = StyleSheet.create({
   root: {
     alignItems: 'center',
-    padding: 20,
+   backgroundColor:`#f5fffa`,
   },
   logo: {
-    width: '70%',
-    maxWidth: 300,
-    maxHeight: 200,
+    width: '100%',
+    maxWidth: 400,
   },
 });
 

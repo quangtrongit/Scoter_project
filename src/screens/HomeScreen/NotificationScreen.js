@@ -111,7 +111,9 @@ const NotificationScreen = () => {
                   'NHẬP MÃ UUDAIT11 GIẢM 50K CHO ĐƠN HÀNG 700K. Áp dụng cho sản phẩm ngành Điện Gia Dụng. XEM NGAY!',
               },
             ]}
-            keyExtractor={(item) => item.id.toString()}
+            keyExtractor={item => {
+              return item.id.toString();
+            }}
             renderItem={({item}) => <NotificationItem item={item} />}
           />
         </View>
@@ -141,7 +143,7 @@ const styles = StyleSheet.create({
     borderBottomColor: '#e5e5e5',
   },
   activeMark: {
-    backgroundColor: '#1e88e5',
+    backgroundColor: '#ffa500',
     width: 4,
   },
   activeIcon: {

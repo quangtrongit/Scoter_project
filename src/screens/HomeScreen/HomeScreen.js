@@ -12,7 +12,7 @@ const HomeScreen = () => {
       <View style={styles.headerContainer}>
         <View style={styles.inputContainer}>
           <FontAwesome name="search" size={24} color="#969696" />
-          <Text style={styles.inputText}>Bạn tìm gì hôm nay?</Text>
+          <Text style={styles.inputText}>What do you want to eat today?</Text>
         </View>
         {/*  */}
         <View style={styles.cartContainer}>
@@ -22,9 +22,6 @@ const HomeScreen = () => {
       {/*  */}
       <View style={styles.bodyContainer}>
         <ScrollView>
-          <HomeSectionComponent />
-          <HomeSectionComponent />
-          <HomeSectionComponent />
           <HomeSectionComponent />
         </ScrollView>
       </View>
@@ -40,7 +37,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingTop: 50,
     paddingBottom: 4,
-    backgroundColor: '#1e88e5',
+    backgroundColor: '#ffa500',
   },
   inputContainer: {
     backgroundColor: '#fff',
