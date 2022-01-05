@@ -8,7 +8,7 @@ import {
   useWindowDimensions,
   ScrollView,
 } from 'react-native';
-import Logo from '../../../assets/images/logo1.jpeg';
+import Logo from '../../../assets/Hand_Made_Shosp.png';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import SocialSignInButtons from '../../components/SocialSignInButtons';
@@ -23,7 +23,7 @@ const SignInScreen = () => {
 
   const onSignInPressed = () => {
     // validate user
-    navigation.navigate('Home');
+    navigation.navigate('Overview');
   };
 
   const onForgotPasswordPressed = () => {
