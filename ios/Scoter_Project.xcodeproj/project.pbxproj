@@ -15,6 +15,8 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B45E71214B711094C457AFF0 /* libPods-Scoter_Project-Scoter_ProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE63E6A76E299FEDA46B2D0B /* libPods-Scoter_Project-Scoter_ProjectTests.a */; };
 		BA8C370D278437D500606CC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA8C370C278437D500606CC1 /* GoogleService-Info.plist */; };
+		BAE360752785AAA500BF2522 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE360742785AAA500BF2522 /* libRNVectorIcons.a */; };
+		BAE360772785AAB400BF2522 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE360762785AAB400BF2522 /* libRNVectorIcons.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		BA66425427855B5500AE5EB8 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		BA66425527855B5500AE5EB8 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		BA8C370C278437D500606CC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAE360742785AAA500BF2522 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE360762785AAB400BF2522 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCCAA4F1302F8441E9BF7F0 /* Pods-Scoter_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoter_Project.debug.xcconfig"; path = "Target Support Files/Pods-Scoter_Project/Pods-Scoter_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EE63E6A76E299FEDA46B2D0B /* libPods-Scoter_Project-Scoter_ProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scoter_Project-Scoter_ProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45E71214B711094C457AFF0 /* libPods-Scoter_Project-Scoter_ProjectTests.a in Frameworks */,
+				BAE360772785AAB400BF2522 /* libRNVectorIcons.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE360752785AAA500BF2522 /* libRNVectorIcons.a in Frameworks */,
 				30CA05F33412C5AF4999E485 /* libPods-Scoter_Project.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +124,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAE360762785AAB400BF2522 /* libRNVectorIcons.a */,
+				BAE360742785AAA500BF2522 /* libRNVectorIcons.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				91AFD7FC2C7D7C67A64CE5E3 /* libPods-Scoter_Project.a */,
 				EE63E6A76E299FEDA46B2D0B /* libPods-Scoter_Project-Scoter_ProjectTests.a */,
