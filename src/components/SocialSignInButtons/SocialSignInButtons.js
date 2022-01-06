@@ -1,15 +1,27 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Button} from 'react-native';
 import CustomButton from '../CustomButton';
+import { GoogleSignin } from '@react-native-google-signin/google-signin';
+import auth from '@react-native-firebase/auth';
+import Overview from '../../navigation/OverviewTabNavigator'
 
 const SocialSignInButtons = () => {
   const onSignInFacebook = () => {
     console.warn('onSignInFacebook');
   };
 
-  const onSignInGoogle = () => {
+  const onSignInGoogle = async () => {
+    GoogleSignin.configure({
+      webClientId: '28573600806-9ig3j8l2hn7jcjdru4eojo47go7helj7.apps.googleusercontent.com',
+    });
     console.warn('onSignInGoogle');
+  const { idToken } = await GoogleSignin.signIn();
+  const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+  const onSignInGoogle1 = auth().signInWithCredential(googleCredential);
+  onSignInGoogle1.then(re =>{
+      console.log(re);
+    });
   };
 
   const onSignInApple = () => {
@@ -26,7 +38,7 @@ const SocialSignInButtons = () => {
       />
       <CustomButton
         text="Sign In with Google"
-        onPress={onSignInGoogle}
+        onPress={() => onSignInGoogle().then(() =>('Overview'))}
         bgColor="#FAE9EA"
         fgColor="#DD4D44"
       />

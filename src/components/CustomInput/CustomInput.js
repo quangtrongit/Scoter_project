@@ -20,12 +20,11 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
     width: '100%',
-    height: 40,
+    height: 45,
   justifyContent:'center',
-    borderColor: '#f341',
+    borderColor: '#f64881',
     borderWidth: 1,
     borderRadius: 15,
-
     paddingHorizontal: 10,
     marginVertical: 5,
   },

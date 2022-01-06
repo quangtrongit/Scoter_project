@@ -12,9 +12,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		30CA05F33412C5AF4999E485 /* libPods-Scoter_Project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AFD7FC2C7D7C67A64CE5E3 /* libPods-Scoter_Project.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		81AB9BB82411601600AC10FF /* FastFood.png in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* FastFood.png */; };
 		B45E71214B711094C457AFF0 /* libPods-Scoter_Project-Scoter_ProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE63E6A76E299FEDA46B2D0B /* libPods-Scoter_Project-Scoter_ProjectTests.a */; };
-		BA8C370D278437D500606CC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA8C370C278437D500606CC1 /* GoogleService-Info.plist */; };
+		BA1B23132786A0A500074C78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA1B23122786A0A500074C78 /* GoogleService-Info.plist */; };
 		BAE360752785AAA500BF2522 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE360742785AAA500BF2522 /* libRNVectorIcons.a */; };
 		BAE360772785AAB400BF2522 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE360762785AAB400BF2522 /* libRNVectorIcons.a */; };
 /* End PBXBuildFile section */
@@ -40,9 +40,10 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Scoter_Project/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Scoter_Project/main.m; sourceTree = "<group>"; };
 		7F72CA4AF8B97367C2007B96 /* Pods-Scoter_Project-Scoter_ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoter_Project-Scoter_ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-Scoter_Project-Scoter_ProjectTests/Pods-Scoter_Project-Scoter_ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Scoter_Project/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* FastFood.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image.png; name = FastFood.png; path = ../../../Downloads/FastFood.png; sourceTree = "<group>"; };
 		91AFD7FC2C7D7C67A64CE5E3 /* libPods-Scoter_Project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scoter_Project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9483CF8263A51B09365B137A /* Pods-Scoter_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoter_Project.release.xcconfig"; path = "Target Support Files/Pods-Scoter_Project/Pods-Scoter_Project.release.xcconfig"; sourceTree = "<group>"; };
+		BA1B23122786A0A500074C78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BA66424627855B5500AE5EB8 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		BA66424727855B5500AE5EB8 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		BA66424827855B5500AE5EB8 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		BA66425327855B5500AE5EB8 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		BA66425427855B5500AE5EB8 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		BA66425527855B5500AE5EB8 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		BA8C370C278437D500606CC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAE360742785AAA500BF2522 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE360762785AAB400BF2522 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCCAA4F1302F8441E9BF7F0 /* Pods-Scoter_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoter_Project.debug.xcconfig"; path = "Target Support Files/Pods-Scoter_Project/Pods-Scoter_Project.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				81AB9BB72411601600AC10FF /* FastFood.png */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = Scoter_Project;
@@ -143,7 +143,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				BA8C370C278437D500606CC1 /* GoogleService-Info.plist */,
+				BA1B23122786A0A500074C78 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* Scoter_Project */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* Scoter_ProjectTests */,
@@ -294,9 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				BA8C370D278437D500606CC1 /* GoogleService-Info.plist in Resources */,
+				81AB9BB82411601600AC10FF /* FastFood.png in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BA1B23132786A0A500074C78 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

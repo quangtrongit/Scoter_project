@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key></key>
+	<string></string>
+	<key>CLIENT_ID</key>
+	<string>28573600806-9ig3j8l2hn7jcjdru4eojo47go7helj7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.28573600806-9ig3j8l2hn7jcjdru4eojo47go7helj7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC6FlxNNKADzem0S4A4FHS-Aw-8hRKCAj8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>28573600806</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.scoterproject</string>
+	<key>PROJECT_ID</key>
+	<string>wetwetewtet</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wetwetewtet.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:28573600806:ios:4ef265cb702d6855f0eae7</string>
+</dict>
+</plist>
