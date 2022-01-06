@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const Header = ({title}) => (
@@ -12,7 +12,13 @@ const Header = ({title}) => (
     <Text style={styles.headerText}>{title}</Text>
     {/*  */}
     <View style={styles.cartContainer}>
-      <FontAwesome name="shopping-cart" size={HEADER_ICON_SIZE} color="#fff" />
+      <TouchableOpacity>
+        <FontAwesome
+          name="shopping-cart"
+          size={HEADER_ICON_SIZE}
+          color="#fff"
+        />
+      </TouchableOpacity>
     </View>
   </View>
 );

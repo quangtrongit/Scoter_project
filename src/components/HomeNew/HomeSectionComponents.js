@@ -8,6 +8,7 @@ import {
   Dimensions,
   ScrollView,
 } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const {width} = Dimensions.get('window');
 
@@ -69,12 +70,24 @@ const HomeSectionComponent = () => {
             {image1: item_image_1, image2: item_image_2},
           ].map((e, index) => (
             <View key={index.toString()}>
+              <TouchableOpacity>
               <ProductItem name="Fast Food" image={e.image1} price="29.000đ" />
+              </TouchableOpacity>
+              <TouchableOpacity>
               <ProductItem name="Soft Drink" image={e.image2} price="49.000đ" />
+              </TouchableOpacity>
+              <TouchableOpacity>
               <ProductItem name="Bakery Items" image={e.image2} price="99.000đ" />
+              </TouchableOpacity>
+              <TouchableOpacity>
               <ProductItem name="Deals" image={e.image2} price="19.000đ" />
+              </TouchableOpacity>
+              <TouchableOpacity>
               <ProductItem name="Coffee & Tea" image={e.image2} price="79.000đ" />
+              </TouchableOpacity>
+              <TouchableOpacity>
               <ProductItem name="Desserts" image={e.image2} price="69.000đ" />
+              </TouchableOpacity>
             </View>
           ))}
         </View>

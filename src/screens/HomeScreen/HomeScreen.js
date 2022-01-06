@@ -1,5 +1,12 @@
 import React from 'react';
-import {StyleSheet, View, Text, StatusBar, ScrollView} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Text,
+  StatusBar,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import HomeSectionComponent from '../../components/HomeNew/HomeSectionComponents';
@@ -15,9 +22,9 @@ const HomeScreen = () => {
           <Text style={styles.inputText}>What do you want to eat today?</Text>
         </View>
         {/*  */}
-        <View style={styles.cartContainer}>
+        <TouchableOpacity style={styles.cartContainer}>
           <FontAwesome name="shopping-cart" size={24} color="#fff" />
-        </View>
+        </TouchableOpacity>
       </View>
       {/*  */}
       <View style={styles.bodyContainer}>

@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {
   StyleSheet,
@@ -32,29 +33,51 @@ const ProfileScreen = ({navigation}) => {
       <View style={styles.bodyContainer}>
         <View style={styles.userContainer}>
           <View style={styles.avatarContainer}>
-            <MaterialIcons name="person" size={26} color="#fff" />
+            <TouchableOpacity>
+              <MaterialIcons name="person" size={26} color="#fff" />
+            </TouchableOpacity>
           </View>
           <View style={styles.textContainer}>
             <Text style={styles.welcomeText}>Welcome to Fast Food & Drink</Text>
             <Text style={styles.authText}>User_TDQT </Text>
           </View>
-          <FontAwesome name="angle-right" size={26} color="#1e88e5" />
+          <TouchableOpacity>
+            <FontAwesome name="angle-right" size={26} color="#1e88e5" />
+          </TouchableOpacity>
         </View>
         {/*  */}
         <View style={styles.divider} />
-        <ProfileItem icon="format-list-bulleted" name="Management Orders" />
-        <ProfileItem icon="cart-outline" name=" Ordered Food  " />
-        <ProfileItem icon="eye-outline" name="Viewed Food " />
-        <ProfileItem icon="heart-outline" name="Favorite Food " />
-        <ProfileItem icon="bookmark-outline" name="Food to buy later" />
-        <ProfileItem icon="star-outline" name="Food  reviews" />
+        <TouchableOpacity>
+          <ProfileItem icon="format-list-bulleted" name="Management Orders" />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <ProfileItem icon="cart-outline" name=" Ordered Food  " />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <ProfileItem icon="eye-outline" name="Viewed Food " />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <ProfileItem icon="heart-outline" name="Favorite Food " />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <ProfileItem icon="bookmark-outline" name="Food to buy later" />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <ProfileItem icon="star-outline" name="Food  reviews" />
+        </TouchableOpacity>
         {/*  */}
         <View style={styles.divider} />
-        <ProfileItem name="Offers for bank card & visa holders" />
-        <ProfileItem name="Setting" />
+        <TouchableOpacity>
+          <ProfileItem name="Offers for bank card & visa holders" />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <ProfileItem name="Setting" icon="cog" />
+        </TouchableOpacity>
         {/*  */}
         <View style={styles.divider} />
-        <ProfileItem icon="headphones" name=" Customer support" />
+        <TouchableOpacity>
+          <ProfileItem icon="headphones" name=" Customer support" />
+        </TouchableOpacity>
       </View>
       <TouchableOpacity onPress={() => navigation.navigate('SignIn')}>
         <ProfileItem icon="logout" name="Logout" />

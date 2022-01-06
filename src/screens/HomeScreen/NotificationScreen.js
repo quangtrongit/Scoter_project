@@ -11,6 +11,7 @@ const NotificationItem = ({item}) => (
       <View
         style={[
           styles.itemTypeContainer,
+          // eslint-disable-next-line react-native/no-inline-styles
           {
             backgroundColor: item.type === 1 ? '#fc820a' : '#dc3988',
           },
@@ -36,7 +37,7 @@ const NotificationScreen = () => {
   return (
     <View style={styles.screenContainer}>
       <StatusBar barStyle="light-content" />
-      <Header title="Thông báo" />
+      <Header title="Notifications" />
       <View style={styles.bodyContainer}>
         <View>
           <View style={styles.buttonActiveContainer}>
@@ -65,50 +66,50 @@ const NotificationScreen = () => {
               {
                 id: 1,
                 type: 1,
-                name: 'Anker Giảm Khủng 40% Duy Nhất Hôm Nay 13/11',
+                name: 'Anker 40% Off Today Only 11/13',
                 date: '13/11/2018',
                 detail:
-                  'Anker Giảm Khủng 40% Duy Nhất Hôm Nay 13/11 - Số Lượng Có Hạn',
+                  'Anker Huge Discount 40% Only Today 11/13 - Limited Quantity',
               },
               {
                 id: 2,
                 type: 2,
-                name: 'GỢI Ý QUÀ TẶNG 20.10',
+                name: 'GIFT SUGGESTION 20.10',
                 date: '02/11/2018',
                 detail:
-                  'NHẬP MÃ UUDAIT11 GIẢM 50K CHO ĐƠN HÀNG 700K. Áp dụng cho sản phẩm ngành Điện Gia Dụng. XEM NGAY!',
+                  'ENTER CODE UUDAIT11 50K OFF FOR ORDER 700K. Applies to household electrical products. WATCH NOW!',
               },
               {
                 id: 3,
                 type: 1,
-                name: 'Anker Giảm Khủng 40% Duy Nhất Hôm Nay 13/11',
+                name: 'Anker Huge 40% Off Today Only 11/13',
                 date: '13/11/2018',
                 detail:
-                  'Anker Giảm Khủng 40% Duy Nhất Hôm Nay 13/11 - Số Lượng Có Hạn',
+                  'Anker Huge Discount 40% Only Today 11/13 - Limited Quantity',
               },
               {
                 id: 4,
                 type: 2,
-                name: 'GỢI Ý QUÀ TẶNG 20.10',
+                name: 'GIFT SUGGESTION 20.10',
                 date: '02/11/2018',
                 detail:
-                  'NHẬP MÃ UUDAIT11 GIẢM 50K CHO ĐƠN HÀNG 700K. Áp dụng cho sản phẩm ngành Điện Gia Dụng. XEM NGAY!',
+                  'ENTER CODE UUDAIT11 50K OFF FOR ORDER 700K. Applies to household electrical products. WATCH NOW!',
               },
               {
                 id: 5,
                 type: 1,
-                name: 'Anker Giảm Khủng 40% Duy Nhất Hôm Nay 13/11',
+                name: 'Anker Huge 40% Off Today Only 11/13',
                 date: '13/11/2018',
                 detail:
-                  'Anker Giảm Khủng 40% Duy Nhất Hôm Nay 13/11 - Số Lượng Có Hạn',
+                  'Anker Huge Discount 40% Only Today 11/13 - Limited Quantity',
               },
               {
                 id: 6,
                 type: 2,
-                name: 'GỢI Ý QUÀ TẶNG 20.10',
+                name: 'GIFT SUGGESTION 20.10',
                 date: '02/11/2018',
                 detail:
-                  'NHẬP MÃ UUDAIT11 GIẢM 50K CHO ĐƠN HÀNG 700K. Áp dụng cho sản phẩm ngành Điện Gia Dụng. XEM NGAY!',
+                  'ENTER CODE UUDAIT11 50K OFF FOR ORDER 700K. Applies to household electrical products. WATCH NOW!',
               },
             ]}
             keyExtractor={item => {
