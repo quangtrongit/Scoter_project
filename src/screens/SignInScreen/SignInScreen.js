@@ -2,7 +2,6 @@
 import React, {useState} from 'react';
 import {
   View,
-  Text,
   Image,
   StyleSheet,
   useWindowDimensions,
@@ -43,7 +42,7 @@ const SignInScreen = () => {
         />
 
         <CustomInput
-          placeholder="Username"
+          placeholder="Email"
           value={email}
           setValue={setEmail}
         />
@@ -77,7 +76,8 @@ const SignInScreen = () => {
 const styles = StyleSheet.create({
   root: {
     alignItems: 'center',
-   backgroundColor:`#f5fffa`,
+   backgroundColor:'#f5fffa',
+   padding:10,
   },
   logo: {
     width: '100%',

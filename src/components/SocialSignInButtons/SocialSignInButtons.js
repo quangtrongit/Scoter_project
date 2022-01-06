@@ -4,7 +4,6 @@ import {Button} from 'react-native';
 import CustomButton from '../CustomButton';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import auth from '@react-native-firebase/auth';
-import Overview from '../../navigation/OverviewTabNavigator'
 
 const SocialSignInButtons = () => {
   const onSignInFacebook = () => {
@@ -38,7 +37,7 @@ const SocialSignInButtons = () => {
       />
       <CustomButton
         text="Sign In with Google"
-        onPress={() => onSignInGoogle().then(() =>('Overview'))}
+        onPress={() => onSignInGoogle().then(() => console.log('Signed in with Google!'))}
         bgColor="#FAE9EA"
         fgColor="#DD4D44"
       />
